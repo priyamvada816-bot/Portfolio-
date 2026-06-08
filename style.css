@@ -32,21 +32,21 @@
 }
 
 [data-theme="cobalt"] {
-  --accent-h: 210;
-  --accent-s: 100%;
-  --accent-l: 55%;
+  --accent: gold;
+  --accent-dim: rgba(255, 215, 0, 0.12);
+  --accent-mid: rgba(255, 215, 0, 0.35);
 }
 
 [data-theme="amber"] {
-  --accent-h: 36;
-  --accent-s: 100%;
-  --accent-l: 50%;
+  --accent: red;
+  --accent-dim: rgba(255, 0, 0, 0.12);
+  --accent-mid: rgba(255, 0, 0, 0.35);
 }
 
 [data-theme="violet"] {
-  --accent-h: 275;
-  --accent-s: 90%;
-  --accent-l: 60%;
+  --accent: purple;
+  --accent-dim: rgba(128, 0, 128, 0.12);
+  --accent-mid: rgba(128, 0, 128, 0.35);
 }
 
 * {
@@ -187,9 +187,9 @@ body::before {
 }
 
 .theme-dot[data-theme-val="emerald"] { background-color: #10b981; }
-.theme-dot[data-theme-val="cobalt"] { background-color: #3b82f6; }
-.theme-dot[data-theme-val="amber"] { background-color: #f59e0b; }
-.theme-dot[data-theme-val="violet"] { background-color: #8b5cf6; }
+.theme-dot[data-theme-val="cobalt"] { background-color: gold; }
+.theme-dot[data-theme-val="amber"] { background-color: red; }
+.theme-dot[data-theme-val="violet"] { background-color: purple; }
 
 .panel {
   background: var(--bg-card);
